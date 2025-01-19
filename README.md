@@ -1,65 +1,27 @@
-# nexovm-highlighting README
+# Nexovm Language Support
 
-This is the README for your extension "nexovm-highlighting". After writing up a brief description, we recommend including the following sections.
+Dies ist eine Erweiterung für Visual Studio Code, die Syntax-Hervorhebung und Unterstützung für die Programmiersprache Nexovm bietet.
 
-## Features
+## Funktionen:
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Syntaxhervorhebung für Funktionen (`fun`, `define`, `call`, `cout`).
+- Anpassbare Farbschemata.
+- Unterstützung für benutzerdefinierte Variablen- und Funktionsnamen.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation:
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Installiere die Erweiterung über den VSCode Marketplace oder lade die `.vsix`-Datei herunter und installiere sie manuell.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Beispielcode:
 
-## Requirements
+```nexovm
+fun main {
+    string testString = "Test String"
+    cout >!> *testString
+    call testFunction
+}
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+define testFunction {
+    cout >> "Hello from testFunction!"
+}
+```

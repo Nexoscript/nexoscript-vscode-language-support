@@ -1,24 +1,20 @@
 {
-  "name": "nexovm-highlighting",
-  "displayName": "NexoVM Highlighting",
-  "description": "",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.96.0"
-  },
-  "categories": [
-    "Programming Languages"
-  ],
+  "name": "nexovm-language-support",
+  "displayName": "Nexovm Language Support",
+  "description": "Language support for Nexovm, including syntax highlighting and other features.",
+  "version": "0.0.0",
+  "publisher": "Nexoscript",
   "contributes": {
     "languages": [
       {
         "id": "nexovm",
-        "aliases": [
-          "NexoVM",
-          "nexovm"
-        ],
         "extensions": [
-          ".nexovm"
+          ".nexovm",
+          ".nexoscript"
+        ],
+        "aliases": [
+          "Nexovm",
+          "nexovm"
         ],
         "configuration": "./language-configuration.json"
       }
@@ -29,6 +25,83 @@
         "scopeName": "source.nexovm",
         "path": "./syntaxes/nexovm.tmLanguage.json"
       }
+    ],
+    "tokenColors": [
+      {
+        "scope": "nexovm.keyword.control",
+        "settings": {
+          "foreground": "#FF5733"
+        }
+      },
+      {
+        "scope": "nexovm.entity.name.function",
+        "settings": {
+          "foreground": "#33FF57"
+        }
+      },
+      {
+        "scope": "nexovm.storage.type",
+        "settings": {
+          "foreground": "#FFD700"
+        }
+      },
+      {
+        "scope": "nexovm.support.function.execution-point",
+        "settings": {
+          "foreground": "#1E90FF"
+        }
+      },
+      {
+        "scope": "nexovm.support.function.call",
+        "settings": {
+          "foreground": "#8A2BE2"
+        }
+      },
+      {
+        "scope": "nexovm.variable.other",
+        "settings": {
+          "foreground": "#FFA500"
+        }
+      },
+      {
+        "scope": "nexovm.variable.language",
+        "settings": {
+          "foreground": "#00FA9A"
+        }
+      },
+      {
+        "scope": "nexovm.keyword.operator.assignment",
+        "settings": {
+          "foreground": "#FF1493"
+        }
+      },
+      {
+        "scope": "nexovm.keyword.operator",
+        "settings": {
+          "foreground": "#DC143C"
+        }
+      },
+      {
+        "scope": "nexovm.string.quoted.double",
+        "settings": {
+          "foreground": "#D2691E"
+        }
+      },
+      {
+        "scope": "nexovm.comment.line.double-slash",
+        "settings": {
+          "foreground": "#808080"
+        }
+      },
+      {
+        "scope": "nexovm.comment.block",
+        "settings": {
+          "foreground": "#2F4F4F"
+        }
+      }
     ]
+  },
+  "engines": {
+    "vscode": "^1.0.0"
   }
 }

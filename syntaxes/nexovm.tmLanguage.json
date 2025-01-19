@@ -1,28 +1,57 @@
 {
+  "fileTypes": ["nexovm", "nexoscript"],
+  "name": "NexoVM",
   "scopeName": "source.nexovm",
   "patterns": [
     {
-      "name": "keyword.control.nexovm",
-      "match": "\\bfun\\b"
+      "name": "nexovm.keyword.control",
+      "match": "\\b(fun|func|function|def|define)\\b"
     },
     {
-      "name": "entity.name.function.nexovm",
+      "name": "nexovm.entity.name.function",
       "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b(?=\\s*\\{)"
     },
     {
-      "name": "keyword.operator.nexovm",
-      "match": ">!>"
+      "name": "nexovm.storage.type",
+      "match": "\\b(string|integer|int)\\b"
     },
     {
-      "name": "string.quoted.double.nexovm",
+      "name": "nexovm.support.function.execution-point",
+      "match": "\\bcout\\b"
+    },
+    {
+      "name": "nexovm.support.function.call",
+      "match": "\\bcall\\b"
+    },
+    {
+      "name": "nexovm.variable.other",
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+    },
+    {
+      "name": "nexovm.variable.language",
+      "match": "\\*\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+    },
+    {
+      "name": "nexovm.keyword.operator.assignment",
+      "match": "="
+    },
+    {
+      "name": "nexovm.keyword.operator",
+      "match": ">!>|>>"
+    },
+    {
+      "name": "nexovm.string.quoted.double",
       "begin": "\"",
       "end": "\""
     },
     {
-      "name": "variable.language.nexovm",
-      "match": "\\bcout\\b"
+      "name": "nexovm.comment.line.double-slash",
+      "match": "//.*$"
+    },
+    {
+      "name": "nexovm.comment.block",
+      "begin": "/\\*",
+      "end": "\\*/"
     }
-  ],
-  "repository": {},
-  "fileTypes": [".nexovm"]
+  ]
 }
