@@ -1,0 +1,34 @@
+{
+  "name": "nexovm-highlighting",
+  "displayName": "NexoVM Highlighting",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "nexovm",
+        "aliases": [
+          "NexoVM",
+          "nexovm"
+        ],
+        "extensions": [
+          ".nexovm"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "nexovm",
+        "scopeName": "source.nexovm",
+        "path": "./syntaxes/nexovm.tmLanguage.json"
+      }
+    ]
+  }
+}

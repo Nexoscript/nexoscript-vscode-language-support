@@ -1,0 +1,28 @@
+{
+  "scopeName": "source.nexovm",
+  "patterns": [
+    {
+      "name": "keyword.control.nexovm",
+      "match": "\\bfun\\b"
+    },
+    {
+      "name": "entity.name.function.nexovm",
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b(?=\\s*\\{)"
+    },
+    {
+      "name": "keyword.operator.nexovm",
+      "match": ">!>"
+    },
+    {
+      "name": "string.quoted.double.nexovm",
+      "begin": "\"",
+      "end": "\""
+    },
+    {
+      "name": "variable.language.nexovm",
+      "match": "\\bcout\\b"
+    }
+  ],
+  "repository": {},
+  "fileTypes": [".nexovm"]
+}
