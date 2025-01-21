@@ -6,7 +6,7 @@ import * as vscode from "vscode";
 
 export function activate(context: vscode.ExtensionContext) {
   const provider = vscode.languages.registerCompletionItemProvider(
-    { scheme: "file", language: "nexovm" },
+    { scheme: "file", language: "nexoscript" },
     {
       provideCompletionItems() {
         const completions = [
@@ -79,6 +79,46 @@ export function activate(context: vscode.ExtensionContext) {
             label: "call",
             detail: "Snippet: Call Definition",
             kind: vscode.CompletionItemKind.Struct,
+          },
+          {
+            label: "string",
+            detail: "Snippet: String Definition",
+            kind: vscode.CompletionItemKind.Property,
+          },
+          {
+            label: "integer",
+            detail: "Snippet: Integer Definition",
+            kind: vscode.CompletionItemKind.Property,
+          },
+          {
+            label: "int",
+            detail: "Snippet: Integer Definition",
+            kind: vscode.CompletionItemKind.Property,
+          },
+          {
+            label: "long",
+            detail: "Snippet: Long Definition",
+            kind: vscode.CompletionItemKind.Property,
+          },
+          {
+            label: "double",
+            detail: "Snippet: Double Definition",
+            kind: vscode.CompletionItemKind.Property,
+          },
+          {
+            label: "boolean",
+            detail: "Snippet: Boolean Definition",
+            kind: vscode.CompletionItemKind.Property,
+          },
+          {
+            label: "bool",
+            detail: "Snippet: Boolean Definition",
+            kind: vscode.CompletionItemKind.Property,
+          },
+          {
+            label: "array[]",
+            detail: "Snippet: Array Definition",
+            kind: vscode.CompletionItemKind.Property,
           },
         ];
 

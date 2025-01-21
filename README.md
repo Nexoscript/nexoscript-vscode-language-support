@@ -1,20 +1,24 @@
-# Nexovm Language Support
+# Nexoscript Language Support
 
-Dies ist eine Erweiterung für Visual Studio Code, die Syntax-Hervorhebung und Unterstützung für die Programmiersprache Nexovm bietet.
+This is a visual studio code extension to improve the handling with the programming language nexoscript with syntax highlighting and completion.
 
-## Funktionen:
+## Functionallity
 
-- Syntaxhervorhebung für Funktionen (`fun`, `define`, `call`, `cout`).
-- Anpassbare Farbschemata.
-- Unterstützung für benutzerdefinierte Variablen- und Funktionsnamen.
+- Syntax highlighting for example `fun`, `define`, `call` and `cout`.
+- You can make custom themes.
 
-## Installation:
+## Installation
 
-1. Installiere die Erweiterung über den VSCode Marketplace oder lade die `.vsix`-Datei herunter und installiere sie manuell.
+1. Just download the `.vsix` file from the latest release.
+2. Open visual studio code.
+3. Go to extensions.
+4. Click on the three dots.
+5. Click on 'Install from VSIX'.
+6. Select the downloaded `.vsix` file.
 
-## Beispielcode:
+## Examples
 
-```nexovm
+```nexoscript
 fun main {
     string testString = "Test String"
     cout >!> *testString

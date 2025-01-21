@@ -1,0 +1,61 @@
+{
+  "fileTypes": ["nexoscript"],
+  "name": "Nexoscript",
+  "scopeName": "source.nexoscript",
+  "patterns": [
+    {
+      "name": "keyword.control.nexoscript",
+      "match": "\\b(fun|func|function|def|define|met|meth|method)\\b"
+    },
+    {
+      "name": "entity.name.function.nexoscript",
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b(?=\\s*\\{)"
+    },
+    {
+      "name": "storage.type.nexoscript",
+      "match": "\\b(string|integer|int|long|double|boolean|bool|array)\\b"
+    },
+    {
+      "name": "support.function.execution.nexoscript",
+      "match": "\\b(cout|print|sout|sysout|log|sysin)\\b"
+    },
+    {
+      "name": "support.type.call.nexoscript",
+      "match": "\\bcall\\b"
+    },
+    {
+      "name": "variable.other.nexoscript",
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+    },
+    {
+      "name": "variable.language.nexoscript",
+      "match": "\\*\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+    },
+    {
+      "name": "keyword.operator.assignment.nexoscript",
+      "match": "="
+    },
+    {
+      "name": "keyword.operator.nexoscript",
+      "match": ">!>|>>|<<|<+<|<-<|<*<|</<"
+    },
+    {
+      "name": "string.quoted.double.nexoscript",
+      "begin": "\"",
+      "end": "\""
+    },
+    {
+      "name": "number.language.nexoscript",
+      "match": "[0-9]"
+    },
+    {
+      "name": "comment.line.nexoscript",
+      "match": "//.*$|#.*$"
+    },
+    {
+      "name": "comment.block.nexoscript",
+      "begin": "/\\*",
+      "end": "\\*/"
+    }
+  ]
+}

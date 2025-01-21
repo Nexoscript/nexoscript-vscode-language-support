@@ -1,0 +1,25 @@
+project: {
+  name: "test"
+  main: {
+    src: "main.nexoscript"
+    method: "main"
+  }
+  export: "out/"
+  libraries: {
+    json: {
+        path: "libs/json.nexoscript"
+        version: "0.1.0"
+        url: "..."
+    }
+    toml: {
+      path: "libs/toml.nexoscript"
+      version: "0.1.1"
+      url: "..."
+    }
+    yaml: {
+      path: "libs/yaml.nexoscript"
+      version: "0.0.5"
+      url: "..."
+    }
+  }
+}

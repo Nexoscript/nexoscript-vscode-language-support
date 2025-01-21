@@ -1,34 +1,51 @@
 {
-  "name": "nexovm-language-support",
-  "displayName": "NexoVM Language Support",
-  "description": "Language support for NexoVM, including syntax highlighting and other features.",
+  "name": "lang-support",
+  "displayName": "Nexoscript Language Support",
+  "description": "Language support for Nexoscript, including syntax highlighting and other features.",
   "version": "0.0.0",
   "publisher": "Nexoscript",
-  "repository": "https://github.com/Nexoscript/nexovm",
+  "repository": "https://github.com/Nexoscript/nexoscript",
+  "icon": "assets/logo.png",
   "contributes": {
     "languages": [
       {
-        "id": "nexovm",
+        "id": "nexoscript",
         "extensions": [
           ".nexoscript"
         ],
         "aliases": [
-          "NexoVM",
-          "nexovm"
+          "Nexoscript",
+          "nexoscript"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "nexoproject",
+        "extensions": [
+          ".nexoproject"
+        ],
+        "aliases": [
+          "Nexoproject",
+          "nexoproject"
         ],
         "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
       {
-        "language": "nexovm",
-        "scopeName": "source.nexovm",
-        "path": "./syntaxes/nexovm.tmLanguage.json"
+        "language": "nexoscript",
+        "scopeName": "source.nexoscript",
+        "path": "./syntaxes/nexoscript.tmLanguage.json"
+      },
+      {
+        "language": "nexoproject",
+        "scopeName": "source.nexoproject",
+        "path": "./syntaxes/nexoproject.tmLanguage.json"
       }
     ]
   },
   "configurationDefaults": {
-    "nexovm": {
+    "nexoscript": {
       "editor.semanticHighlighting.enabled": true
     }
   },

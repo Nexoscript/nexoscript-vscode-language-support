@@ -1,0 +1,19 @@
+{
+  "fileTypes": ["nexoproject"],
+  "name": "Nexoproject",
+  "scopeName": "source.nexoproject",
+  "patterns": [
+    {
+      "name": "variable.other.nexoproject",
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\s*(?=:)"
+    },
+    {
+      "name": "string.quoted.double",
+      "match": "\".*?\""
+    },
+    {
+      "name": "keyword.operator.assignment.nexoproject",
+      "match": ":"
+    }
+  ]
+}
