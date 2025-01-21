@@ -2,5 +2,5 @@ import jsonobject from json
 import toml
 
 meth main {
-
+    array[array[any]] = [["Lastname", "Firstname", "Age"], ["Mustermann", "Max", 25], ["Musterhauser", "Maximus", 42]]
 }
