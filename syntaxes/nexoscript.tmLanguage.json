@@ -5,7 +5,7 @@
   "patterns": [
     {
       "name": "keyword.control.nexoscript",
-      "match": "\\b(fun|func|function|def|define|met|meth|method)\\b"
+      "match": "\\b(fun|func|function|def|define|met|meth|method|import|from)\\b"
     },
     {
       "name": "entity.name.function.nexoscript",
