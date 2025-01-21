@@ -120,6 +120,56 @@ export function activate(context: vscode.ExtensionContext) {
             detail: "Snippet: Array Definition",
             kind: vscode.CompletionItemKind.Property,
           },
+          {
+            label: "object",
+            detail: "Snippet: Any Definition",
+            kind: vscode.CompletionItemKind.Property,
+          },
+          {
+            label: "obj",
+            detail: "Snippet: Any Definition",
+            kind: vscode.CompletionItemKind.Property,
+          },
+          {
+            label: "any",
+            detail: "Snippet: Any Definition",
+            kind: vscode.CompletionItemKind.Property,
+          },
+          {
+            label: ">>",
+            detail: "Snippet: >> Definition",
+            kind: vscode.CompletionItemKind.Field,
+          },
+          {
+            label: ">!>",
+            detail: "Snippet: >!> Definition",
+            kind: vscode.CompletionItemKind.Field,
+          },
+          {
+            label: "<<",
+            detail: "Snippet: << Definition",
+            kind: vscode.CompletionItemKind.Field,
+          },
+          {
+            label: "<+<",
+            detail: "Snippet: <+< Definition",
+            kind: vscode.CompletionItemKind.Field,
+          },
+          {
+            label: "<-<",
+            detail: "Snippet: <-< Definition",
+            kind: vscode.CompletionItemKind.Field,
+          },
+          {
+            label: "<*<",
+            detail: "Snippet: <*< Definition",
+            kind: vscode.CompletionItemKind.Field,
+          },
+          {
+            label: "</<",
+            detail: "Snippet: </< Definition",
+            kind: vscode.CompletionItemKind.Field,
+          },
         ];
 
         return completions.map((item) => {
