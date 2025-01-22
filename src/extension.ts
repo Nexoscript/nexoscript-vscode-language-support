@@ -81,6 +81,11 @@ export function activate(context: vscode.ExtensionContext) {
             kind: vscode.CompletionItemKind.Struct,
           },
           {
+            label: "use",
+            detail: "Snippet: Call Definition",
+            kind: vscode.CompletionItemKind.Struct,
+          },
+          {
             label: "string",
             detail: "Snippet: String Definition",
             kind: vscode.CompletionItemKind.Property,
