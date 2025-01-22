@@ -21,7 +21,7 @@
     },
     {
       "name": "support.type.call.nexoscript",
-      "match": "\\bcall\\b"
+      "match": "\\b(call|use)\\b"
     },
     {
       "name": "variable.other.nexoscript",
