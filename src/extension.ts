@@ -111,6 +111,11 @@ export function activate(context: vscode.ExtensionContext) {
             kind: vscode.CompletionItemKind.Property,
           },
           {
+            label: "float",
+            detail: "Snippet: Float Definition",
+            kind: vscode.CompletionItemKind.Property,
+          },
+          {
             label: "boolean",
             detail: "Snippet: Boolean Definition",
             kind: vscode.CompletionItemKind.Property,
